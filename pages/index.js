@@ -8,8 +8,76 @@ import Audio from "../components/Audio";
 const data = [
   {
     title: "Good Morning",
+    id: 26758474,
+    url: "http://m8.music.126.net/20220803160823/20a5b8ed7eff0bd431e0115632747c21/ymusic/005e/075f/050f/74e019e8d2055a92226b2e604ce00d28.mp3",
+    br: 320000,
+    size: 3538068,
+    md5: "74e019e8d2055a92226b2e604ce00d28",
+    code: 200,
+    expi: 1200,
+    type: "mp3",
+    gain: -6.2637,
+    fee: 0,
+    uf: null,
+    payed: 0,
+    flag: 128,
+    canExtend: false,
+    freeTrialInfo: null,
+    level: "exhigh",
+    encodeType: "mp3",
+    freeTrialPrivilege: {
+      resConsumable: false,
+      userConsumable: false,
+      listenType: null,
+    },
+    freeTimeTrialPrivilege: {
+      resConsumable: false,
+      userConsumable: false,
+      type: 0,
+      remainTime: 0,
+    },
+    urlSource: 0,
+    rightSource: 0,
+    podcastCtrp: null,
+  },
+  {
+    title: "Singing in the rain",
+    id: 1299346137,
+    url: "http://m7.music.126.net/20220803160823/02505cd21216b92fcd2d1f1fcd452cce/ymusic/46cc/9b11/3c80/c376c1201d33101e2587ace0b1290f88.mp3",
+    br: 128000,
+    size: 3996987,
+    md5: "c376c1201d33101e2587ace0b1290f88",
+    code: 200,
+    expi: 1200,
+    type: "mp3",
+    gain: -0.7854,
+    fee: 8,
+    uf: null,
+    payed: 0,
+    flag: 0,
+    canExtend: false,
+    freeTrialInfo: null,
+    level: "standard",
+    encodeType: "mp3",
+    freeTrialPrivilege: {
+      resConsumable: false,
+      userConsumable: false,
+      listenType: null,
+    },
+    freeTimeTrialPrivilege: {
+      resConsumable: false,
+      userConsumable: false,
+      type: 0,
+      remainTime: 0,
+    },
+    urlSource: 0,
+    rightSource: 0,
+    podcastCtrp: null,
+  },
+  {
+    title: "Memory",
     id: 563431633,
-    url: "http://m7.music.126.net/20220803114052/d95b5b0430256f69d0e61486e41a78ff/ymusic/972a/423b/232a/80fac506f8a8f26c276838d6e18a128b.mp3",
+    url: "http://m7.music.126.net/20220803160823/6cef06130971f30d6f3888c510b43f9d/ymusic/972a/423b/232a/80fac506f8a8f26c276838d6e18a128b.mp3",
     br: 320000,
     size: 6469007,
     md5: "80fac506f8a8f26c276838d6e18a128b",
@@ -41,23 +109,23 @@ const data = [
     podcastCtrp: null,
   },
   {
-    title: "Singing in the rain",
-    id: 1394270885,
-    url: "http://m8.music.126.net/20220803114052/bf24eee658aa14ff603e5fa1b10694ac/ymusic/0008/045d/035e/7b2adc6c3d3793b6efb14477ed2aba9a.mp3",
-    br: 128000,
-    size: 2863482,
-    md5: "7b2adc6c3d3793b6efb14477ed2aba9a",
+    title: "Soviet Connection",
+    id: 5040401,
+    url: "http://m8.music.126.net/20220803160823/113dae385422dd0bd4d5e7ea3ea0103f/ymusic/a372/cb44/0975/5b044e085786b4b31f33e6e6f65bb2b9.mp3",
+    br: 320000,
+    size: 6864291,
+    md5: "5b044e085786b4b31f33e6e6f65bb2b9",
     code: 200,
     expi: 1200,
     type: "mp3",
-    gain: -1.5604,
-    fee: 8,
+    gain: -9.6605,
+    fee: 0,
     uf: null,
     payed: 0,
-    flag: 4,
+    flag: 256,
     canExtend: false,
     freeTrialInfo: null,
-    level: "standard",
+    level: "exhigh",
     encodeType: "mp3",
     freeTrialPrivilege: {
       resConsumable: false,
@@ -75,20 +143,20 @@ const data = [
     podcastCtrp: null,
   },
   {
-    title: "Memory",
-    id: 1299346137,
-    url: "http://m7.music.126.net/20220803130935/347ff9fb216369e86c78e31e83915799/ymusic/46cc/9b11/3c80/c376c1201d33101e2587ace0b1290f88.mp3",
+    title: "Theme From San Andreas",
+    id: 1394270885,
+    url: "http://m7.music.126.net/20220803160823/59d6ec35d4621c6fb0e3e6cb68a678db/ymusic/0008/045d/035e/7b2adc6c3d3793b6efb14477ed2aba9a.mp3",
     br: 128000,
-    size: 3996987,
-    md5: "c376c1201d33101e2587ace0b1290f88",
+    size: 2863482,
+    md5: "7b2adc6c3d3793b6efb14477ed2aba9a",
     code: 200,
     expi: 1200,
     type: "mp3",
-    gain: -0.7854,
+    gain: -1.5604,
     fee: 8,
     uf: null,
     payed: 0,
-    flag: 0,
+    flag: 4,
     canExtend: false,
     freeTrialInfo: null,
     level: "standard",
@@ -330,7 +398,7 @@ export default function Home() {
             </>
           )}
         </button>
-        <button onClick={()=>setControl(control === false ? true : false)}>
+        <button onClick={() => setControl(control === false ? true : false)}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-4 w-4 sm:w-5 sm:h-5"
@@ -357,7 +425,9 @@ export default function Home() {
         width="100%"
       />
       <footer>
-        <h2 className="font-semibold opacity-40 text-xs sm:text-sm my-16">Copyright ©️ 2022 Cloudflare233.</h2>
+        <h2 className="font-semibold opacity-40 text-xs sm:text-sm my-16">
+          Copyright ©️ 2022 Cloudflare233.
+        </h2>
       </footer>
     </div>
   );
