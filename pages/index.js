@@ -133,7 +133,7 @@ export default function Home() {
   const [speed, setSpeed] = useState(1);
   const [control, setControl] = useState(false);
   return (
-    <div className="max-w-5xl mx-auto p-16 sm:p-64 -mt-12 sm:-mt-36">
+    <div className="max-w-5xl mx-auto p-16 sm:p-64 -mt-0 sm:-mt-36">
       <h1 className="font-bold text-4xl mb-8">Songs</h1>
       <span className="flex flex-col space-y-4 text-left">
         {data.map((item) => (
