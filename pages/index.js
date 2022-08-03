@@ -8,173 +8,15 @@ import Audio from "../components/Audio";
 const data = [
   {
     title: "Good Morning",
-    id: 26758474,
-    url: "http://m8.music.126.net/20220803160823/20a5b8ed7eff0bd431e0115632747c21/ymusic/005e/075f/050f/74e019e8d2055a92226b2e604ce00d28.mp3",
-    br: 320000,
-    size: 3538068,
-    md5: "74e019e8d2055a92226b2e604ce00d28",
-    code: 200,
-    expi: 1200,
-    type: "mp3",
-    gain: -6.2637,
-    fee: 0,
-    uf: null,
-    payed: 0,
-    flag: 128,
-    canExtend: false,
-    freeTrialInfo: null,
-    level: "exhigh",
-    encodeType: "mp3",
-    freeTrialPrivilege: {
-      resConsumable: false,
-      userConsumable: false,
-      listenType: null,
-    },
-    freeTimeTrialPrivilege: {
-      resConsumable: false,
-      userConsumable: false,
-      type: 0,
-      remainTime: 0,
-    },
-    urlSource: 0,
-    rightSource: 0,
-    podcastCtrp: null,
+    id: 563431633,
   },
   {
     title: "Singing in the rain",
-    id: 1299346137,
-    url: "http://m7.music.126.net/20220803160823/02505cd21216b92fcd2d1f1fcd452cce/ymusic/46cc/9b11/3c80/c376c1201d33101e2587ace0b1290f88.mp3",
-    br: 128000,
-    size: 3996987,
-    md5: "c376c1201d33101e2587ace0b1290f88",
-    code: 200,
-    expi: 1200,
-    type: "mp3",
-    gain: -0.7854,
-    fee: 8,
-    uf: null,
-    payed: 0,
-    flag: 0,
-    canExtend: false,
-    freeTrialInfo: null,
-    level: "standard",
-    encodeType: "mp3",
-    freeTrialPrivilege: {
-      resConsumable: false,
-      userConsumable: false,
-      listenType: null,
-    },
-    freeTimeTrialPrivilege: {
-      resConsumable: false,
-      userConsumable: false,
-      type: 0,
-      remainTime: 0,
-    },
-    urlSource: 0,
-    rightSource: 0,
-    podcastCtrp: null,
+    id: 1394270885,
   },
   {
     title: "Memory",
-    id: 563431633,
-    url: "http://m7.music.126.net/20220803160823/6cef06130971f30d6f3888c510b43f9d/ymusic/972a/423b/232a/80fac506f8a8f26c276838d6e18a128b.mp3",
-    br: 320000,
-    size: 6469007,
-    md5: "80fac506f8a8f26c276838d6e18a128b",
-    code: 200,
-    expi: 1200,
-    type: "mp3",
-    gain: 0,
-    fee: 0,
-    uf: null,
-    payed: 0,
-    flag: 257,
-    canExtend: false,
-    freeTrialInfo: null,
-    level: "exhigh",
-    encodeType: "mp3",
-    freeTrialPrivilege: {
-      resConsumable: false,
-      userConsumable: false,
-      listenType: null,
-    },
-    freeTimeTrialPrivilege: {
-      resConsumable: false,
-      userConsumable: false,
-      type: 0,
-      remainTime: 0,
-    },
-    urlSource: 0,
-    rightSource: 0,
-    podcastCtrp: null,
-  },
-  {
-    title: "Soviet Connection",
-    id: 5040401,
-    url: "http://m8.music.126.net/20220803160823/113dae385422dd0bd4d5e7ea3ea0103f/ymusic/a372/cb44/0975/5b044e085786b4b31f33e6e6f65bb2b9.mp3",
-    br: 320000,
-    size: 6864291,
-    md5: "5b044e085786b4b31f33e6e6f65bb2b9",
-    code: 200,
-    expi: 1200,
-    type: "mp3",
-    gain: -9.6605,
-    fee: 0,
-    uf: null,
-    payed: 0,
-    flag: 256,
-    canExtend: false,
-    freeTrialInfo: null,
-    level: "exhigh",
-    encodeType: "mp3",
-    freeTrialPrivilege: {
-      resConsumable: false,
-      userConsumable: false,
-      listenType: null,
-    },
-    freeTimeTrialPrivilege: {
-      resConsumable: false,
-      userConsumable: false,
-      type: 0,
-      remainTime: 0,
-    },
-    urlSource: 0,
-    rightSource: 0,
-    podcastCtrp: null,
-  },
-  {
-    title: "Theme From San Andreas",
-    id: 1394270885,
-    url: "http://m7.music.126.net/20220803160823/59d6ec35d4621c6fb0e3e6cb68a678db/ymusic/0008/045d/035e/7b2adc6c3d3793b6efb14477ed2aba9a.mp3",
-    br: 128000,
-    size: 2863482,
-    md5: "7b2adc6c3d3793b6efb14477ed2aba9a",
-    code: 200,
-    expi: 1200,
-    type: "mp3",
-    gain: -1.5604,
-    fee: 8,
-    uf: null,
-    payed: 0,
-    flag: 4,
-    canExtend: false,
-    freeTrialInfo: null,
-    level: "standard",
-    encodeType: "mp3",
-    freeTrialPrivilege: {
-      resConsumable: false,
-      userConsumable: false,
-      listenType: null,
-    },
-    freeTimeTrialPrivilege: {
-      resConsumable: false,
-      userConsumable: false,
-      type: 0,
-      remainTime: 0,
-    },
-    urlSource: 0,
-    rightSource: 0,
-    podcastCtrp: null,
+    id: "1299346137",
   },
 ];
 
@@ -209,7 +51,7 @@ export default function Home() {
             key={item.id}
             title={item.title}
             onClick={() => {
-              setPlaying(item.url);
+              setPlaying(`https://music.163.com/song/media/outer/url?id=${item.id}.mp3`);
               setIsPlaying(item.title);
             }}
           />
@@ -235,7 +77,7 @@ export default function Home() {
                 d="M12 6v6m0 0v6m0-6h6m-6 0H6"
               />
             </svg>
-            Add a new one
+            Add a new download
           </>
         )}
         {add === true && (
@@ -254,13 +96,13 @@ export default function Home() {
                 d="M6 18L18 6M6 6l12 12"
               />
             </svg>
-            Cancel Process
+            Cancel Download
           </>
         )}
       </button>
       {add === true && (
         <>
-          <div className="flex flex-col sm:flex-row space-x-0 sm:space-x-4 space-y-3 sm:space-y-0">
+          <div className="my-8 flex flex-col sm:flex-row space-x-0 sm:space-x-4 space-y-3 sm:space-y-0">
             <div className="w-full sm:w-1/2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -284,146 +126,27 @@ export default function Home() {
             </div>
             <button
               onClick={() =>
-                open(`https://cf233-apis.vercel.app/song/url?id=${json}`)
+                open(`https://music.163.com/song/media/outer/url?id=${json}.mp3`)
               }
               className="bg-black text-white rounded-lg px-8 py-2 text-sm border-black border trnasition-all duration-500 hover:bg-white hover:text-black hover:border hover:border-black"
             >
-              Get your JSON
+              Download Now
             </button>
-          </div>
-          <div className="my-4 border-b py-8">
-            <h1 className="opacity-80 font-semibold text-sm my-4">
-              How to use?
-            </h1>
-            <p className="opacity-70 font-normal text-xs">
-              Please copy the JSON you created just now to the head of the
-              `index.js` to replace the orgin word. And then delete the head of
-              the code, and turn `data:` to `const data =`. And you make it!
-              Just add the title of the music. And you got a lite music player.
-            </p>
           </div>
         </>
       )}
       <div className="text-sm py-8 opacity-60 border-t">
         <h1 className="font-medium text-center">Now Playing: {isPlaying}</h1>
       </div>
-      <div className="-mt-3 mb-4 max-w-xs mx-auto opacity-70 flex flex-row px-16 py-2 space-x-4 justify-between">
-        <button onClick={() => setMute(mute === false ? true : false)}>
-          {mute === false && (
-            <>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-4 w-4 sm:w-6 sm:h-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth={2}
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"
-                />
-              </svg>
-            </>
-          )}
-          {mute === true && (
-            <>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-4 w-4 sm:w-6 sm:h-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth={2}
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"
-                  clipRule="evenodd"
-                />
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M17 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2"
-                />
-              </svg>
-            </>
-          )}
-        </button>
-        <button
-          className=""
-          onClick={() => setPause(pause === false ? true : false)}
-        >
-          {pause === true && (
-            <>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-4 w-4 sm:w-6 sm:h-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth={2}
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M10 9v6m4-6v6m7-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
-              </svg>
-            </>
-          )}
-          {pause === false && (
-            <>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-4 w-4 sm:w-6 sm:h-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth={2}
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"
-                />
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
-              </svg>
-            </>
-          )}
-        </button>
-        <button onClick={() => setControl(control === false ? true : false)}>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-4 w-4 sm:w-5 sm:h-5"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            strokeWidth={2}
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"
-            />
-          </svg>
-        </button>
-      </div>
+      <div className="-mt-3 mb-4 max-w-xs mx-auto opacity-70 flex flex-row py-2 space-x-4 justify-between">
       <ReactPlayer
-        controls={control}
         url={playing}
-        muted={mute}
-        playing={pause}
-        playbackRate={speed}
+        controls={true}
+        playing={true}
         height="36px"
         width="100%"
       />
+      </div>
       <footer>
         <h2 className="font-semibold opacity-40 text-xs sm:text-sm my-16">
           Copyright ©️ 2022 Cloudflare233.
@@ -432,3 +155,4 @@ export default function Home() {
     </div>
   );
 }
+
