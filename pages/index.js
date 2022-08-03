@@ -77,7 +77,7 @@ export default function Home() {
                 d="M12 6v6m0 0v6m0-6h6m-6 0H6"
               />
             </svg>
-            Add a new download
+            Create a new download
           </>
         )}
         {add === true && (
@@ -121,7 +121,7 @@ export default function Home() {
               <input
                 onChange={(e) => setJSON(e.target.value)}
                 className="bg-white border rounded-lg text-sm focus:outline-none hover:border-zinc-500 focus:border-zinc-600 px-10 py-2 w-full"
-                placeholder="Add your ID"
+                placeholder="Paste the ID here"
               />
             </div>
             <button
