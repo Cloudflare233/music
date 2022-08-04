@@ -30,6 +30,10 @@ const data = [
     id: "27214083",
   },
   {
+    title: "Just Blue",
+    id: "19067286",
+  },
+  {
     title: "Undead Funeral March",
     id: "19606011",
   },
@@ -42,12 +46,20 @@ const data = [
     id: "1458445847",
   },
   {
+    title: "明天会更好",
+    id: "5285415",
+  },
+  {
     title: "Love Is Blue",
     id: "1087237",
   },
   {
     title: "Wir sind des Geyers schwarzer Haufen",
     id: "1379637860",
+  },
+  {
+    title: "Old Town Road",
+    id: "1373172794",
   },
 ];
 
@@ -85,7 +97,7 @@ export default function Home() {
         <Head>
           <title>Music | Cloudflare233</title>
         </Head>
-        <h1 className="font-bold text-4xl mb-2">Songs</h1>
+        <h1 className="font-medium text-4xl mb-2">Songs</h1>
         <div className="bg-white dark:bg-black flex opacity-100 flex-row sticky top-0 py-0 sm:py-1 border-b dark:border-b-zinc-800 w-full z-20">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -215,7 +227,7 @@ export default function Home() {
           </div>
           <center>
             <footer className="flex flex-row space-x-4 mt-4 sm:mt-8 mb-2 sm:mb-4">
-              <h2 className="ml-8 font-semibold opacity-40 text-xs sm:text-sm">
+              <h2 className="ml-8 font-medium opacity-40 text-xs sm:text-sm">
                 Copyright ©️ 2022 Cloudflare233.
               </h2>
               <select
