@@ -37,7 +37,6 @@ class Audio extends Component {
   onEnded = () => {
     const { id } = this.props;
     const audio = document.getElementById(`audio${id}`);
-    audio.play();
     this.setState({
       allTime: audio.duration,
       isEnd: true,
@@ -138,7 +137,7 @@ class Audio extends Component {
 
     return (
       <div className="mt-3">
-        <h1 className="text-xs sm:text-sm font-medium mt-2 mb-5 sm:mt-0 opacity-60 text-center">
+        <h1 className="text-sm font-medium mt-2 mb-5 sm:mt-0 opacity-60 text-center">
           Now Playing: {isPlaying}
         </h1>
         <audio

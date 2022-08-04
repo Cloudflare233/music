@@ -30,8 +30,20 @@ const data = [
     id: "26758474",
   },
   {
+    title: "Aurora Borealis",
+    id: "29027341",
+  },
+  {
     title: "Buy a Gun for Your Son",
     id: "27214083",
+  },
+  {
+    title: "The Simpsons Main Title",
+    id: "3590788",
+  },
+  {
+    title: "HOI4 main the meallies",
+    id: "423406345",
   },
   {
     title: "Just Blue",
@@ -40,6 +52,10 @@ const data = [
   {
     title: "Undead Funeral March",
     id: "19606011",
+  },
+  {
+    title: "La Mer",
+    id: "31152553",
   },
   {
     title: "И вновь продолжается бой",
@@ -89,12 +105,16 @@ const data = [
     title: "Non, je ne regrette rien",
     id: "1405113845",
   },
+  {
+    title: "Pump It",
+    id: "1958647681",
+  },
 ];
 
 function Card({ onClick, title, key }) {
   return (
     <button
-      className="border-b dark:border-b-zinc-800 text-left text-sm opacity-80 font-medium transition-all duration-500 py-3"
+      className="px-3 border-b dark:border-b-zinc-800 text-left text-sm opacity-80 font-medium transition-all duration-500 py-3"
       key={key}
       onClick={onClick}
     >
@@ -110,6 +130,8 @@ export default function Home() {
   const [json, setJSON] = useState("");
   const [isPlaying, setIsPlaying] = useState("");
   const [searchValue, setSearchValue] = useState("");
+  const [addl, setAddl] = useState(false);
+  const [playValue, setPlayValue] = useState("/tno.ogg");
   const SearchFiltered = data.filter((data) =>
     data.title.toLowerCase().includes(searchValue.toLowerCase())
   );
@@ -158,6 +180,84 @@ export default function Home() {
             <p className="text-sm opacity-80 py-3 border-b dark:border-b-zinc-800 font-medium">
               No songs were found.
             </p>
+          )}
+          <button
+            onClick={() => setAddl(addl === true ? false : true)}
+            className="text-sm mt-1 mb-2 sm:mb-4 opacity-80 font-medium transition-all duration-500 py-3 border-b dark:border-b-zinc-800 w-full flex flex-row space-x-8"
+          >
+            {addl === false && (
+              <>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+                  />
+                </svg>
+                Add another song
+              </>
+            )}
+            {addl === true && (
+              <>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-4 w-4 mt-0.5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+                Cancel
+              </>
+            )}
+          </button>
+          {addl === true && (
+            <div className="flex flex-col sm:flex-row space-x-0 sm:space-x-4 space-y-3 sm:space-y-0">
+              <div className="w-full sm:w-1/2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="absolute opacity-50 h-5 w-5 mt-2.5 ml-2"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M13 10V3L4 14h7v7l9-11h-7z"
+                  />
+                </svg>
+                <input
+                  value={playValue}
+                  onChange={(e) => setPlayValue(e.target.value)}
+                  className="bg-white border rounded-lg dark:focus:border-zinc-300 text-sm focus:outline-none dark:hover:border-zinc-500 dark:bg-black dark:border-zinc-800 hover:border-zinc-500 focus:border-zinc-600 px-10 py-2 w-full"
+                  placeholder="/tno.ogg"
+                />
+              </div>
+              <button
+                onClick={() => {
+                  setIsPlaying(playValue);
+                  setPlaying(playValue);
+                }}
+                className="ml-3 mb-4 bg-black dark:bg-white dark:text-black dark:hover:bg-black dark:hover:text-white dark:border-white dark:hover:border-white text-white rounded-lg px-8 py-2 text-sm border-black border trnasition-all duration-500 hover:bg-white hover:text-black hover:border hover:border-black"
+              >
+                Play Now
+              </button>
+            </div>
           )}
         </span>
         <div className="bg-white dark:bg-black dark:border-t-zinc-800 text-sm py-1 sm:py-3 z-40 border-t sticky bottom-0">
