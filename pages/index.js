@@ -223,7 +223,7 @@ export default function Home() {
             <h2 className="font-semibold opacity-40 text-xs sm:text-sm">
               Copyright ©️ 2022 Cloudflare233.
             </h2>
-            <select value={theme} onChange={(e) => setTheme(e.target.value)} className="appearance-none bg-white dark:bg-black focus:outline-none">
+            <select value={theme} onChange={(e) => setTheme(e.target.value)} className="appearance-none bg-white dark:bg-black focus:outline-none text-xs sm:text-sm">
               <option value="light">☀️ Light</option>
               <option value="dark">🌙 Dark</option>
             </select>
