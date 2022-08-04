@@ -1,4 +1,4 @@
-import React, { Component, useState } from "react";
+import React, { Component } from "react";
 
 class Audio extends Component {
   constructor(props) {
@@ -7,6 +7,7 @@ class Audio extends Component {
       rateList: [0.5, 0.75, 1.0, 1.25, 1.5, 2.0],
       playRate: 1.0,
       isPlay: true,
+      isEnd: false,
       isMuted: false,
       volume: 100,
       allTime: 0,
@@ -30,6 +31,17 @@ class Audio extends Component {
     this.setState({
       allTime: audio.duration,
       isPlay: true,
+    });
+  };
+
+  onEnded = () => {
+    const { id } = this.props;
+    const audio = document.getElementById(`audio${id}`);
+    audio.play();
+    this.setState({
+      allTime: audio.duration,
+      isEnd: true,
+      isPlay: false,
     });
   };
 
@@ -111,11 +123,12 @@ class Audio extends Component {
   };
 
   render() {
-    const { src, id } = this.props;
+    const { src, id, isPlaying } = this.props;
 
     const {
       isPlay,
       isMuted,
+      isEnd,
       volume,
       allTime,
       currentTime,
@@ -125,6 +138,9 @@ class Audio extends Component {
 
     return (
       <div className="mt-3">
+        <h1 className="text-xs sm:text-sm font-medium mt-2 mb-5 sm:mt-0 opacity-60 text-center">
+          Now Playing: {isPlaying}
+        </h1>
         <audio
           id={`audio${id}`}
           src={src}
@@ -134,6 +150,7 @@ class Audio extends Component {
           preload={"auto"}
           onCanPlay={this.onCanPlay}
           onTimeUpdate={this.onTimeUpdate}
+          onEnded={this.onEnded}
         >
           <track src={src} kind="captions" />
         </audio>
@@ -255,7 +272,7 @@ class Audio extends Component {
           />
           <div className="mr-6 mt-3">{this.formatSecond(allTime)}</div>
         </div>
-        <div className="mt-4">
+        <div className="mt-4 text-xs sm:text-sm">
           <span>Speed：</span>
           {rateList &&
             rateList.length > 0 &&
@@ -264,8 +281,8 @@ class Audio extends Component {
                 key={item}
                 className={
                   playRate === item
-                    ? "ml-2 mr-2 after:content-['x']"
-                    : "opacity-50 ml-2 mr-2 after:content-['x']"
+                    ? "ml-1 mr-1 sm:ml-2 sm:mr-2 after:content-['x']"
+                    : "opacity-50 ml-1 mr-1 sm:ml-2 sm:mr-2 after:content-['x']"
                 }
                 onClick={() => this.changePlayRate(item)}
               >

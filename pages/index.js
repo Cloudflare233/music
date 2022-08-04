@@ -8,10 +8,14 @@ const data = [
   {
     title: "Good Morning",
     id: 563431633,
+    nextTitle: "Singing in the rain",
+    nextID: "1394270885",
   },
   {
     title: "Singing in the rain",
     id: 1394270885,
+    nextTitle: "Memory",
+    nextID: "1299346137",
   },
   {
     title: "Memory",
@@ -102,15 +106,9 @@ function Card({ onClick, title, key }) {
 export default function Home() {
   const { theme, setTheme } = useTheme();
   const [playing, setPlaying] = useState("");
-  const [lan, setLan] = useState("en");
   const [add, setAdd] = useState(false);
   const [json, setJSON] = useState("");
   const [isPlaying, setIsPlaying] = useState("");
-  const [mute, setMute] = useState(false);
-  const [pause, setPause] = useState(true);
-  const [speed, setSpeed] = useState(1);
-  const [control, setControl] = useState(false);
-  const [played, setPlayed] = useState(0.12);
   const [searchValue, setSearchValue] = useState("");
   const SearchFiltered = data.filter((data) =>
     data.title.toLowerCase().includes(searchValue.toLowerCase())
@@ -243,11 +241,8 @@ export default function Home() {
               </div>
             </>
           )}
-          <h1 className="font-medium mt-2 sm:mt-0 opacity-60 text-center">
-            Now Playing: {isPlaying}
-          </h1>
           <div className="center mt-3 sm:mt-2 opacity-70 justify-between">
-            <Audio src={playing} />
+            <Audio isPlaying={isPlaying} src={playing} />
           </div>
           <center>
             <footer className="flex flex-row space-x-4 mt-4 sm:mt-8 mb-2 sm:mb-4">
