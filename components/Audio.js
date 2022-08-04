@@ -4,7 +4,7 @@ class Audio extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      rateList: [0.75, 1.0, 1.25, 1.5, 2.0],
+      rateList: [0.5, 0.75, 1.0, 1.25, 1.5, 2.0],
       playRate: 1.0,
       isPlay: true,
       isMuted: false,
@@ -215,7 +215,7 @@ class Audio extends Component {
             ) : (
               <div
                 onClick={this.playAudio}
-                className="cursor-pointer -ml-8 sm:-ml-16 transition-all space-x-2 rounded-3xl duration-500 px-8 py-2  hover:bg-zinc-200 dark:hover:bg-zinc-800 flex flex-row"
+                className="cursor-pointer -ml-8 sm:-ml-16 transition-all space-x-2 rounded-3xl duration-500 px-8 py-2  hover:bg-zinc-100 dark:hover:bg-zinc-900 flex flex-row"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -263,8 +263,8 @@ class Audio extends Component {
                 key={item}
                 className={
                   playRate === item
-                    ? "ml-2 mr-2"
-                    : "opacity-50 ml-2 mr-2 after:content-[x]"
+                    ? "ml-2 mr-2 after:content-['x']"
+                    : "opacity-50 ml-2 mr-2 after:content-['x']"
                 }
                 onClick={() => this.changePlayRate(item)}
               >

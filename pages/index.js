@@ -42,6 +42,26 @@ const data = [
     id: "567018762",
   },
   {
+    title: "Whatever Will Be, Will Be",
+    id: "5197167",
+  },
+  {
+    title: "Tie A Yellow Ribbon Round The Old Oak Tree",
+    id: "5183712",
+  },
+  {
+    title: "La Chanson Pour Anna",
+    id: "31854726",
+  },
+  {
+    title: "Love Is Blue",
+    id: "1087237",
+  },
+  {
+    title: "The Bird Of Wounds",
+    id: "1087399",
+  },
+  {
     title: "夜上海",
     id: "1458445847",
   },
@@ -50,8 +70,8 @@ const data = [
     id: "5285415",
   },
   {
-    title: "Love Is Blue",
-    id: "1087237",
+    title: "Preußens Gloria",
+    id: "862213362",
   },
   {
     title: "Wir sind des Geyers schwarzer Haufen",
@@ -60,6 +80,10 @@ const data = [
   {
     title: "Old Town Road",
     id: "1373172794",
+  },
+  {
+    title: "Non, je ne regrette rien",
+    id: "1405113845",
   },
 ];
 
@@ -97,7 +121,7 @@ export default function Home() {
         <Head>
           <title>Music | Cloudflare233</title>
         </Head>
-        <h1 className="font-medium text-4xl mb-2">Songs</h1>
+        <h1 className="font-medium text-3xl sm:text-4xl mb-2">Songs</h1>
         <div className="bg-white dark:bg-black flex opacity-100 flex-row sticky top-0 py-0 sm:py-1 border-b dark:border-b-zinc-800 w-full z-20">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -114,7 +138,7 @@ export default function Home() {
             />
           </svg>
           <input
-            className="hover:border-zinc-800 dark:hover:border-zinc-500 dark:focus:border-zinc-300 dark:border-zinc-800 dark:bg-black focus:border-black focus:outline-none border opacity-70 rounded-lg px-10 py-2 text-sm my-2 sm:my-5 w-full sm:w-2/3"
+            className="hover:border-zinc-800 dark:hover:border-zinc-500 dark:focus:border-zinc-300 dark:border-zinc-800 dark:bg-black focus:border-black focus:outline-none border opacity-70 rounded-lg px-10 py-2 text-sm my-2 sm:my-5 w-full sm:w-3/4"
             placeholder="Search..."
             onChange={(e) => setSearchValue(e.target.value)}
           />
