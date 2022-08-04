@@ -32,6 +32,11 @@
     minimatch "^3.1.2"
     strip-json-comments "^3.1.1"
 
+"@fontsource/ibm-plex-sans@^4.5.11":
+  version "4.5.11"
+  resolved "https://registry.npmmirror.com/@fontsource/ibm-plex-sans/-/ibm-plex-sans-4.5.11.tgz#b2fd7e65eb8c194b36fcc85b9af809cd0b497657"
+  integrity sha512-WOX1VjLbeum0ocHXrm5zdDHMbTXUKXnFG/Ba0hjoAz45/H2NQHgmc8MsugG6Q51DQTFlm/l5Xo04+QKj0i6umw==
+
 "@humanwhocodes/config-array@^0.10.4":
   version "0.10.4"
   resolved "https://registry.yarnpkg.com/@humanwhocodes/config-array/-/config-array-0.10.4.tgz#01e7366e57d2ad104feea63e72248f22015c520c"
@@ -1411,6 +1416,11 @@ natural-compare@^1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/natural-compare/-/natural-compare-1.4.0.tgz#4abebfeed7541f2c27acfb29bdbbd15c8d5ba4f7"
   integrity sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==
+
+next-themes@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.npmmirror.com/next-themes/-/next-themes-0.2.0.tgz#fdc507f61e95b3ae513dee8d4783bcec8c02e3a3"
+  integrity sha512-myhpDL4vadBD9YDSHiewqvzorGzB03N84e+3LxCwHRlM/hiBOaW+UsKsQojQAzC7fdcJA0l2ppveXcYaVV+hxQ==
 
 next@12.2.3:
   version "12.2.3"
