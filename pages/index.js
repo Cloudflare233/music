@@ -1,9 +1,8 @@
 import Head from "next/head";
-import Image from "next/image";
-import styles from "../styles/Home.module.css";
 import { useState } from "react";
 import ReactPlayer from "react-player";
 import { useTheme } from "next-themes";
+import Audio from "../components/Audio";
 
 const data = [
   {
@@ -75,13 +74,14 @@ export default function Home() {
   const [pause, setPause] = useState(true);
   const [speed, setSpeed] = useState(1);
   const [control, setControl] = useState(false);
+  const [played, setPlayed] = useState(0.12);
   const [searchValue, setSearchValue] = useState("");
   const SearchFiltered = data.filter((data) =>
     data.title.toLowerCase().includes(searchValue.toLowerCase())
   );
   return (
     <div className="bg-white dark:bg-black">
-      <div className="max-w-2xl mx-auto p-8 py-0 sm:py-16 sm:p-0">
+      <div className="max-w-2xl mx-auto p-8 py-8 sm:py-16 sm:p-0">
         <Head>
           <title>Music | Cloudflare233</title>
         </Head>
@@ -210,24 +210,24 @@ export default function Home() {
           <h1 className="font-medium mt-2 sm:mt-0 opacity-60 text-center">
             Now Playing: {isPlaying}
           </h1>
-          <div className="mt-3 sm:mt-5 max-w-xs mx-auto opacity-70 flex flex-row space-x-4 justify-between">
-            <ReactPlayer
-              url={playing}
-              controls={true}
-              playing={true}
-              height="36px"
-              width="100%"
-            />
+          <div className="center mt-3 sm:mt-2 opacity-70 justify-between">
+            <Audio src={playing} />
           </div>
-          <footer className="flex flex-row space-x-4 mt-4 sm:mt-8 mb-2 sm:mb-4">
-            <h2 className="font-semibold opacity-40 text-xs sm:text-sm">
-              Copyright ©️ 2022 Cloudflare233.
-            </h2>
-            <select value={theme} onChange={(e) => setTheme(e.target.value)} className="appearance-none bg-white dark:bg-black focus:outline-none text-xs sm:text-sm">
-              <option value="light">☀️ Light</option>
-              <option value="dark">🌙 Dark</option>
-            </select>
-          </footer>
+          <center>
+            <footer className="flex flex-row space-x-4 mt-4 sm:mt-8 mb-2 sm:mb-4">
+              <h2 className="ml-8 font-semibold opacity-40 text-xs sm:text-sm">
+                Copyright ©️ 2022 Cloudflare233.
+              </h2>
+              <select
+                value={theme}
+                onChange={(e) => setTheme(e.target.value)}
+                className="opacity-50 appearance-none bg-white dark:bg-black focus:outline-none text-xs sm:text-sm"
+              >
+                <option value="light">☀️ Light</option>
+                <option value="dark">🌙 Dark</option>
+              </select>
+            </footer>
+          </center>
         </div>
       </div>
     </div>
