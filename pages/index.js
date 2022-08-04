@@ -90,7 +90,7 @@ const data = [
 function Card({ onClick, title, key }) {
   return (
     <button
-      className="des wow animate__fadeInDown border-b dark:border-b-zinc-800 text-left text-sm opacity-80 font-medium transition-all duration-500 py-3"
+      className="border-b dark:border-b-zinc-800 text-left text-sm opacity-80 font-medium transition-all duration-500 py-3"
       key={key}
       onClick={onClick}
     >

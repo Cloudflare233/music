@@ -10,9 +10,7 @@
   },
   "dependencies": {
     "@fontsource/ibm-plex-sans": "^4.5.11",
-    "animate.css": "^4.1.1",
     "autoprefixer": "^10.4.8",
-    "inter-ui": "^3.19.3",
     "next": "12.2.3",
     "next-themes": "^0.2.0",
     "postcss": "^8.4.14",
