@@ -29,6 +29,7 @@ class Audio extends Component {
     audio.play();
     this.setState({
       allTime: audio.duration,
+      isPlay: true,
     });
   };
 
