@@ -8,15 +8,13 @@ import Player from "../components/Player";
 const data = [
   {
     title: "Good Morning",
-    id: 563431633,
+    id: "563431633",
     nextTitle: "Singing in the rain",
-    nextID: "1394270885",
   },
   {
     title: "Singing in the rain",
-    id: 1394270885,
+    id: "1394270885",
     nextTitle: "Memory",
-    nextID: "1299346137",
   },
   {
     title: "Beautiful Girl",
