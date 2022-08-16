@@ -3,6 +3,7 @@ import { useState } from "react";
 import ReactPlayer from "react-player";
 import { useTheme } from "next-themes";
 import Audio from "../components/Audio";
+import Player from "../components/Player";
 
 const data = [
   {
@@ -118,11 +119,25 @@ const data = [
 function Card({ onClick, title, key }) {
   return (
     <button
-      className="px-3 border-b dark:border-b-zinc-800 text-left text-sm opacity-80 font-medium transition-all duration-500 py-3"
+      className="hover:scale-[1.02] px-3 border-b dark:border-b-zinc-800 text-left text-sm opacity-80 font-medium transition-all duration-500 py-3"
       key={key}
       onClick={onClick}
     >
-      {title}
+      <span className="flex flex-row space-x-4">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="h-5 w-5 mr-2"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fillRule="evenodd"
+            d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
+            clipRule="evenodd"
+          />
+        </svg>
+        {title}
+      </span>
     </button>
   );
 }
@@ -345,8 +360,9 @@ export default function Home() {
               </div>
             </>
           )}
-          <div className="center mt-3 sm:mt-2 opacity-70 justify-between">
-            <Audio isPlaying={isPlaying} src={playing} />
+          <div className="center mt-3 sm:mt-2 opacity-70 justify-between z-50">
+            <div className="text-xs sm:text-sm -mb-5 sm:-mb-8">Nowplaying: {isPlaying}</div>
+            <Player isPlaying={isPlaying} url={playing} />
           </div>
           <center>
             <footer className="flex flex-row space-x-4 mt-4 sm:mt-8 mb-2 sm:mb-4">
