@@ -162,7 +162,10 @@ export default function Home() {
           MUSIC.CF233.GA
         </h1>
         <div className="text-sm flex flex-row space-x-4 justify-center bg-white dark:bg-black  border-b py-3 z-50 dark:border-b-zinc-800 sticky top-0">
-          <button className="opacity-60 transition-all duration-500 hover:scale-[1.02] hover:opacity-100">
+          <button
+            onClick={() => open("https://cf233.ga")}
+            className="opacity-60 transition-all duration-500 hover:scale-[1.02] hover:opacity-100"
+          >
             Home
           </button>
           <button
@@ -171,10 +174,7 @@ export default function Home() {
           >
             Blog
           </button>
-          <button
-            onClick={() => open("https://music.cf233.ga")}
-            className="opacity-100 hover:scale-[1.02] transition-all duration-500"
-          >
+          <button className="opacity-100 hover:scale-[1.02] transition-all duration-500">
             Music
           </button>
           <button
