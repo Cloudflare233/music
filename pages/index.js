@@ -193,14 +193,10 @@ export default function Home() {
         {donate === true && (
           <div className="sticky top-[2.8rem] py-1 border-b dark:border-b-zinc-800 bg-white dark:bg-black z-50">
             <Link href="itmss://buy.itunes.apple.com/WebObjects/MZFinance.woa/wa/buyCharityGiftWizard?charity=10220">
-              <div className="cursor-pointer flex flex-col sm:flex-row space-y-5 sm:space-y-2 space-x-8 bg-zinc-50 dark:bg-zinc-900 p-4 sm:p-8 my-4">
+              <div className="cursor-pointer flex flex-col sm:flex-row space-y-5 sm:space-y-2 space-x-8 bg-white dark:bg-black p-4 sm:p-8 my-4">
                 <img
-                  src="/ukraine.png"
-                  className="block dark:hidden w-32 mx-auto sm:w-48"
-                />
-                <img
-                  src="/ukraine_dark.png"
-                  className="hidden dark:inline w-32 mx-auto sm:w-48"
+                  src={theme === "light" ? "/ukraine.png" : "/ukraine_dark.png"}
+                  className="w-36 mx-auto sm:w-48"
                 />
                 <span className="text-xs sm:text-sm text-blue-500 underline">
                   Donate to support families affected by the war in Ukraine,
