@@ -311,7 +311,7 @@ class App extends React.Component {
           )}
           <div
             className={cn(
-              "full width transition-all duration-500 flex flex-col inset-x-0 space-y-1.5 z-30 backdrop-blur-lg mt-2 px-4  py-2 rounded-lg",
+              "full width transition-all duration-500 flex flex-col inset-x-0 space-y-1.5 z-30 mt-2 px-4  py-2 rounded-lg",
               full === false
                 ? "inset-x-0"
                 : "absolute inset-0 top-96 sm:top-[36rem] bottom-96"
