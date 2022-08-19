@@ -28,6 +28,10 @@ const data = [
     id: "5040401",
   },
   {
+    title: "She is My Sin",
+    id: "4209157",
+  },
+  {
     title: "Theme From San Andreas",
     id: "26758474",
   },
@@ -191,9 +195,9 @@ export default function Home() {
           </button>
         </div>
         {donate === true && (
-          <div className="sticky top-[2.8rem] py-1 border-b dark:border-b-zinc-800 bg-white dark:bg-black z-50">
+          <div className="sticky top-[2.7rem] py-1 border-b dark:border-b-zinc-800 bg-white dark:bg-black z-50">
             <Link href="itmss://buy.itunes.apple.com/WebObjects/MZFinance.woa/wa/buyCharityGiftWizard?charity=10220">
-              <div className="cursor-pointer flex flex-col sm:flex-row space-y-5 sm:space-y-2 space-x-8 bg-white dark:bg-black p-4 sm:p-8 my-4">
+              <div className="rounded-lg border dark:border-zinc-800 cursor-pointer flex flex-col sm:flex-row space-y-5 sm:space-y-2 space-x-8 bg-white dark:bg-black p-4 sm:p-8 my-4">
                 <img
                   src={theme === "light" ? "/ukraine.png" : "/ukraine_dark.png"}
                   className="w-36 mx-auto sm:w-48"
@@ -214,7 +218,7 @@ export default function Home() {
         {donate === false && (
           <div
             onClick={() => setDonate(true)}
-            className="cursor-pointer flex flex-row justify-center mx-auto inset-x-0 sticky top-[2.8rem] border-b dark:border-b-zinc-800 py-2 text-xs sm:text-sm dark:text-zinc-400 text-zinc-600 bg-white dark:bg-black z-50"
+            className="cursor-pointer flex flex-row justify-center mx-auto inset-x-0 sticky top-[2.7rem] border-b dark:border-b-zinc-800 py-2 text-xs sm:text-sm dark:text-zinc-400 text-zinc-600 bg-white dark:bg-black z-50"
           >
             🇺🇦 Support the war in ukraine, fight for freedom.
             <svg
@@ -233,7 +237,7 @@ export default function Home() {
             </svg>
           </div>
         )}
-        <div className="bg-white dark:bg-black flex opacity-100 flex-row sticky top-20 py-0 sm:py-1 border-b dark:border-b-zinc-800 w-full z-20">
+        <div className="bg-white dark:bg-black flex opacity-100 flex-row sticky top-[4.75rem] py-0 sm:py-1 border-b dark:border-b-zinc-800 w-full z-20">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-4 w-4 mt-[1.15rem] sm:mt-[1.9rem] ml-3 absolute opacity-80"
